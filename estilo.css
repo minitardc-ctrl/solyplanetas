@@ -14,7 +14,7 @@ body {
 }
 
 body.inicio-bg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('imagenes/img2.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('imágenes/img2.jpg');
     background-size: contain; 
     background-position: center;
     background-attachment: fixed;
