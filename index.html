@@ -5,6 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sol & Estrellas - Inicio</title>
     <link rel="stylesheet" href="estilo.css">
+    <style>
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            background: rgba(15, 23, 42, 0.85);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 10px 0;
+            margin: 15px 0;
+            white-space: nowrap;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .marquee-content {
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+        }
+
+        .marquee-1 .marquee-content {
+            animation: scroll-left 22s linear infinite;
+            color: #ffd700;
+        }
+
+        .marquee-2 .marquee-content {
+            animation: scroll-right 18s linear infinite;
+            color: #38bdf8;
+        }
+
+        .marquee-3 .marquee-content {
+            animation: scroll-left 14s linear infinite;
+            color: #f472b6;
+            font-weight: bold;
+        }
+
+        @keyframes scroll-left {
+            0% { transform: translateX(100vw); }
+            100% { transform: translateX(-100%); }
+        }
+
+        @keyframes scroll-right {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100vw); }
+        }
+
+        .marquee-container:hover .marquee-content {
+            animation-play-state: paused;
+        }
+    </style>
 </head>
 <body class="inicio-bg">
     <header>
@@ -19,13 +69,29 @@
         </nav>
     </header>
 
+    <div class="marquee-container marquee-1">
+        <div class="marquee-content">
+            ☀️ El Sol contiene el 99.86% de toda la masa del sistema solar. | 🌟 La luz del Sol tarda 8 minutos y 20 segundos en llegar a la Tierra.
+        </div>
+    </div>
+
+    <div class="marquee-container marquee-2">
+        <div class="marquee-content">
+            🚀 ¡Explora los límites del cosmos! | 🌌 Hay más estrellas en el universo que granos de arena en todas las playas de la Tierra.
+        </div>
+    </div>
+
+    <div class="marquee-container marquee-3">
+        <div class="marquee-content">
+            ✨ Próxima lluvia de estrellas esta semana. ¡No te la pierdas! | 🔭 Bienvenidos a Sol & Estrellas.
+        </div>
+    </div>
+
     <main>
         <section class="hero">
             <h1>El Universo en nuestro sistema</h1>
             <p>Explora la magnitud de nuestra estrellas y los secretos guardados en el firmamento estelar.</p>
-            </section>
+        </section>
     </main>
-
-    
 </body>
 </html>
